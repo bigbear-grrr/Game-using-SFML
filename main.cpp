@@ -151,6 +151,8 @@ void run_game() {//function for game
     bool isPaused = false;  // Track if the game is paused
     Clock pauseClock;       // Clock to handle pause duration
     float pauseDuration = 2.f; // Pause for 2 seconds between levels
+    bool can_shoot = true; // Flag to track if the player can fire another bullet
+
 
 
     // Background setup
@@ -330,13 +332,18 @@ void run_game() {//function for game
         }
 
        //fire from different spots
-        if (Keyboard::isKeyPressed(Keyboard::Up) && projectiles.size() < 30) {
+        if (Keyboard::isKeyPressed(Keyboard::Up) && can_shoot) {
             projectile.setPosition(
                 player.getPosition().x + player.getGlobalBounds().width / 2 - projectile.getSize().x / 2,
                 player.getPosition().y
             );
             projectiles.push_back(RectangleShape(projectile));
             gunShotSound.play();
+            can_shoot = false;   // Prevent further shooting until the key is released
+        }
+        // Check for key release to allow shooting again
+        if (!Keyboard::isKeyPressed(Keyboard::Up)) {
+        can_shoot = true; // Allow the player to shoot again
         }
 
         // Fire bombs from left and right
