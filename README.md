@@ -9,7 +9,7 @@ This project was inspired by the classic arcade game galaga, it serves as a fun 
 - Full instruction screen and responsive UI
 - Audio feedback
 
-## Technical Details
+## technical details
 - **Language:** C++
 - **Library:** SFML (Simple and Fast Multimedia Library)
 - **IDE:** Visual Studio
@@ -20,3 +20,25 @@ This project was inspired by the classic arcade game galaga, it serves as a fun 
 
 ![gameSS](https://github.com/user-attachments/assets/0dbad57e-e9d7-4e9c-b8ad-4952e0451966)
 
+## build instructions (Visual Studio)
+- Configure Visual Studio:
+  **C/C++ → General → Additional Include Directories:**
+  $(SolutionDir)external\sfml\include
+  **Linker → General → Additional Library Directories:**
+  $(SolutionDir)external\sfml\lib
+  **Linker → Input → Additional Dependencies:**
+  - *Debug Configuration:*
+    sfml-graphics-d.lib
+    sfml-window-d.lib
+    sfml-audio-d.lib
+    sfml-network-d.lib
+    sfml-system-d.lib
+  
+- *Release Configuration:*
+  ```
+  sfml-graphics.lib
+  sfml-window.lib
+  sfml-audio.lib
+  sfml-network.lib
+  sfml-system.lib
+  ```
