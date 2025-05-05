@@ -20,3 +20,24 @@ This project was inspired by the classic arcade game galaga, it serves as a fun 
 
 ![gameSS](https://github.com/user-attachments/assets/0dbad57e-e9d7-4e9c-b8ad-4952e0451966)
 
+
+
+
+**note to self**: 
+// SFML
+//c++ -> general -> additional include dir. -> $(SolutionDir)external\sfml\include
+//linker -> general -> additional lib dir. -> $(SolutionDir)external\sfml\lib
+
+//linker -> input -> debug -> additional dependencies 
+sfml-graphics-d.lib
+sfml-window-d.lib
+sfml-audio-d.lib
+sfml-network-d.lib
+sfml-system-d.lib
+
+//linker -> input -> release -> additional dependencies 
+sfml-graphics.lib
+sfml-window.lib
+sfml-audio.lib
+sfml-network.lib
+sfml-system.lib
