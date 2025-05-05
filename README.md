@@ -26,6 +26,7 @@ This project was inspired by the classic arcade game galaga, it serves as a fun 
     
     $(SolutionDir)external\sfml\include
   - **Linker → General → Additional Library Directories**:
+  
     $(SolutionDir)external\sfml\lib
   - **Linker → Input → Additional Dependencies:**
     - *Debug Configuration:*
