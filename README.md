@@ -20,7 +20,10 @@ This project was inspired by the classic arcade game galaga, it serves as a fun 
 
 ![gameSS](https://github.com/user-attachments/assets/0dbad57e-e9d7-4e9c-b8ad-4952e0451966)
 
+
+
 ## build instructions (Visual Studio)
+- Download and extract SFML to use with Visual Studio
 - Configure Visual Studio:
   - **C/C++ → General → Additional Include Directories**:
     
