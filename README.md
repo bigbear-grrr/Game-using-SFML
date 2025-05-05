@@ -23,7 +23,7 @@ This project was inspired by the classic arcade game galaga, it serves as a fun 
 
 
 
-**note to self**: 
+## note to self
 c++ -> general -> additional include dir. -> $(SolutionDir)external\sfml\include
 linker -> general -> additional lib dir. -> $(SolutionDir)external\sfml\lib
 
