@@ -24,8 +24,8 @@ This project was inspired by the classic arcade game galaga, it serves as a fun 
 
 
 ## note to self
-c++ -> general -> additional include dir. -> $(SolutionDir)external\sfml\include
-linker -> general -> additional lib dir. -> $(SolutionDir)external\sfml\lib
+c++ -> general -> additional include dir. -> " $(SolutionDir)external\sfml\include "
+linker -> general -> additional lib dir. -> " $(SolutionDir)external\sfml\lib "
 
 linker -> input -> debug -> additional dependencies 
 sfml-graphics-d.lib
