@@ -22,9 +22,10 @@ This project was inspired by the classic arcade game galaga, it serves as a fun 
 
 ## build instructions (Visual Studio)
 - Configure Visual Studio:
-  - **C/C++ → General → Additional Include Directories:**
+  - **C/C++ → General → Additional Include Directories**:
+    
     $(SolutionDir)external\sfml\include
-  - **Linker → General → Additional Library Directories:**
+  - **Linker → General → Additional Library Directories**:
     $(SolutionDir)external\sfml\lib
   - **Linker → Input → Additional Dependencies:**
     - *Debug Configuration:*
