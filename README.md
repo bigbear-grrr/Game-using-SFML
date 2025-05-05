@@ -28,13 +28,14 @@ This project was inspired by the classic arcade game galaga, it serves as a fun 
   $(SolutionDir)external\sfml\lib
   **Linker → Input → Additional Dependencies:**
   - *Debug Configuration:*
-    sfml-graphics-d.lib
-    sfml-window-d.lib
-    sfml-audio-d.lib
-    sfml-network-d.lib
-    sfml-system-d.lib
-  
-- *Release Configuration:*
+  ```
+  sfml-graphics-d.lib
+  sfml-window-d.lib
+  sfml-audio-d.lib
+  sfml-network-d.lib
+  sfml-system-d.lib
+  ```
+  - *Release Configuration:*
   ```
   sfml-graphics.lib
   sfml-window.lib
