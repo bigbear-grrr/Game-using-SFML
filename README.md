@@ -48,3 +48,8 @@ This project was inspired by the classic arcade game galaga, it serves as a fun 
     sfml-network.lib
     sfml-system.lib
     ```
+
+    ## notes
+- Final Project for COP 3003 (Programming-II)
+- Created by Lillianmay Lancour, November 2024
+
